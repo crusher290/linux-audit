@@ -20,8 +20,3 @@ du -ah /var/log |head -n 10 |sort -r > ~/exam_results/audit/top_files.txt
 cp /etc/hosts ~/exam_results/audit/hosts.bak
 chmod 600 ~/exam_results/audit/hosts.bak
 ls -l ~/exam_results/audit/hosts.bak > ~/exam_results/audit/hosts_perm.txt
-
-find ~/exam_results/audit -name '*.txt' -type f ! -name 'hosts_perm.txt' ! -name 'notes.txt' -delete
-
-
-
